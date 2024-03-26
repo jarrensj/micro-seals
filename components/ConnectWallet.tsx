@@ -19,7 +19,6 @@ const ConnectWallet = () => {
           <ConnectKitButton />
           { isConnecting && "connecting..." }
           { isDisconnected && "no wallet connected" }
-          { address && <div>{address}</div> }
         </>
       }
     </>
