@@ -2,13 +2,13 @@
 
 import { ReactNode } from "react";
 import { WagmiProvider, createConfig } from "wagmi";
-import { mainnet } from "wagmi/chains";
+import { base } from "wagmi/chains";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { ConnectKitProvider, getDefaultConfig } from "connectkit";
 
 const config = createConfig(
   getDefaultConfig({
-    chains: [mainnet],
+    chains: [base],
     // Required API Keys
     walletConnectProjectId: process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID || "",
 
